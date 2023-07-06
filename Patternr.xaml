@@ -1,0 +1,35 @@
+﻿<Window x:Class="String_Function.Patternr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:String_Function"
+        xmlns:value="clr-namespace:String_Function"
+        mc:Ignorable="d"
+        Title="Patternr" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
+            <Label Content="{x:Static value:Resource.name}" Width="80" FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txtname"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
+            <Label Content="{x:Static value:Resource.name}" Width="80" FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txtmail"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0">
+            <Label Content="{x:Static value:Resource.cou}" FontSize="16"></Label>
+            <ComboBox Width="200" x:Name="cmbname">
+                <ComboBoxItem>INDIA</ComboBoxItem>
+                <ComboBoxItem>TELUGANA</ComboBoxItem>
+                <ComboBoxItem>KARNATAKA</ComboBoxItem>
+                <ComboBoxItem>KERALA</ComboBoxItem>
+                <ComboBoxItem>DELHI</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
+            <Label Content="{x:Static value:Resource.pin}" Width="80" FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txtcode"></TextBox>
+        </StackPanel>
+        <Button Content="{x:Static value:Resource.click}" Width="100" Background="Red" Margin="0,100,0,0" Click="Button_Click"></Button>
+    </StackPanel>
+</Window>
